@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: powderblue;
+    font-family: "Bangla MN";
+    height: 100dvh;
+}
+
+h1{
+    color: dimgray;
+    background: white;
+    width: 30%;
+    text-align: center;
+    box-shadow: 4px 4px 0px #666, -2px -2px 0px #fff;
+    border-radius: 8px;
+}
+
+button{
+    border-radius: 6px;
+}
+
+.start-btn, .stop-btn{
+    margin-top: 1em;
+    padding: 0.5em;
+}
+
+
+
+.container-show{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    padding: 1em;
+    box-shadow: 2px 2px 20px 3px grey;
+    border-radius: 4px;
+}
+
+.grid{
+    width: 50%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 1em;
+}
+
+.bullet{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    box-shadow: 4px 4px 0px #666, -2px -2px 0px #fff;
+    transition: top 0.3s ease, left 0.3s ease;
+}
+
+.container{
+    height: 100px;
+    width: 100px;
+    background: darkslateblue;
+    border-radius: 13px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0px #666, -2px -2px 0px #fff;
+}
+
+.active{
+    background: #b89357;
+}
+
+.touchey{
+    background-color: green;
+}
